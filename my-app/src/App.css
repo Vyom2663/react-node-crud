@@ -1,0 +1,161 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #983737;
+}
+
+header {
+  background-color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd; 
+}
+
+header .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li {
+  margin-left: 20px;
+}
+
+.hov :hover{
+  color: #f00;
+}
+
+header nav ul li a {
+  text-decoration : none;
+  color: #333;
+}
+
+.product-section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.product-section h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.product-section p {
+  font-size: 16px;
+  margin-bottom: 30px;
+  color: #666;
+}
+
+.filter {
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.filter ul {
+  list-style: none;
+  padding: 0;
+}
+
+.filter ul li {
+  display: inline-block;
+  margin-right: 20px;
+  font-size: 16px;
+  color: #333;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.product-item {
+  background-color: #fff;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.product-item img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.product-item p {
+  margin: 0;
+  font-size: 14px;
+  color: #333;
+}
+
+footer {
+  background-color: #222;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+footer .newsletter input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  width: 200px;
+}
+
+footer .newsletter button {
+  padding: 10px 20px;
+  background-color: #e91e63;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+footer .footer-links ul,
+footer .social-media ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer .footer-links ul li,
+footer .social-media ul li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+footer .footer-links ul li a,
+footer .social-media ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .product-grid {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .product-grid {
+      grid-template-columns: 1fr;
+  }
+}
