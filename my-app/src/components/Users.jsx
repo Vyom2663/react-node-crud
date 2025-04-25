@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { getUsers, deleteUser } from '../api';
 import { useNavigate } from 'react-router-dom';
-import './Users.css'; // 👈 import the CSS file
+import './styles.css'; // 👈 import the CSS file
 
 const Users = () => {
   const [users, setUsers] = useState([]);

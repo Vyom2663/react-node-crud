@@ -1,0 +1,377 @@
+.container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    background-color: #fafafa;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .add-btn {
+    display: block;
+    margin: 0 auto 20px auto;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .add-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .user-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .user-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+  }
+  
+  .actions button {
+    margin-left: 10px;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .edit-btn {
+    background-color: #ffc107;
+    color: white;
+  }
+  
+  .edit-btn:hover {
+    background-color: #e0a800;
+  }
+  
+  .delete-btn {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .delete-btn:hover {
+    background-color: #c82333;
+  }
+  
+  .loading {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 50px;
+  }
+  
+  /* Footer Styles */
+footer {
+  background-color: #2c3e50;
+  color: white;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.newsletter {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.newsletter h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.newsletter input[type="email"] {
+  padding: 10px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.newsletter button {
+  padding: 10px 15px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.newsletter button:hover {
+  background-color: #2980b9;
+}
+
+.footer-links,
+.social-media {
+  flex: 1;
+}
+
+.footer-links ul,
+.social-media ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-links li,
+.social-media li {
+  margin-bottom: 10px;
+}
+
+.footer-links a,
+.social-media a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.footer-links a:hover,
+.social-media a:hover {
+  text-decoration: underline;
+}
+
+.social-media {
+  display: flex;
+  gap: 10px;
+}
+
+.social-media a {
+  font-size: 18px;
+}
+
+.social-media a[href^="http"] {
+  color: #3498db;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .newsletter,
+  .footer-links,
+  .social-media {
+    flex: none;
+    margin-bottom: 20px;
+  }
+}
+
+/* Header Styles */
+header {
+  background-color: #34495e;
+  color: white;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav h1 {
+  margin-right: 20px;
+  font-size: 30px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #3498db;
+}
+
+.hov {
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav h1 {
+    margin-bottom: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+
+/* UpdateUser Form Styles */
+.update-user-container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f4f6f7;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.update-user-container h1 {
+  text-align: center;
+  color: #2c3e50;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.update-user-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.update-user-container input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  outline: none;
+}
+
+.update-user-container input:focus {
+  border-color: #3498db;
+}
+
+.update-user-container button {
+  padding: 10px 15px;
+  background-color: #3498db;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.update-user-container button:hover {
+  background-color: #2980b9;
+}
+
+.update-user-container button:focus {
+  outline: none;
+}
+
+.update-user-container .error-message {
+  color: red;
+  font-size: 14px;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .update-user-container {
+    padding: 15px;
+  }
+}
+
+/* AddUser Form Styles */
+.add-user-container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f4f6f7;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.add-user-container h1 {
+  text-align: center;
+  color: #2c3e50;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.add-user-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.add-user-container input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  outline: none;
+}
+
+.add-user-container input:focus {
+  border-color: #3498db;
+}
+
+.add-user-container button {
+  padding: 10px 15px;
+  background-color: #3498db;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-user-container button:hover {
+  background-color: #2980b9;
+}
+
+.add-user-container button:focus {
+  outline: none;
+}
+
+@media screen and (max-width: 768px) {
+  .add-user-container {
+    padding: 15px;
+  }
+}
+
