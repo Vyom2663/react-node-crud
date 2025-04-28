@@ -9,8 +9,8 @@ function App() {
   return (
     <Router>
       <Header/>
-      <Routes> {/* Replace Switch with Routes */}
-        <Route path="/" element={<Users />} /> {/* Use element prop for components */}
+      <Routes> 
+        <Route path="/" element={<Users />} />
         <Route path="/adduser" element={<AddUser />} />
         <Route path="/updateuser/:id" element={<UpdateUser />} />
       </Routes>
